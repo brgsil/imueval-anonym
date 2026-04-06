@@ -74,7 +74,7 @@ IMUEval provides both **quantitative** and **qualitative** metrics for assessing
 Metrics can be run at **class-level granularity**, ensuring fine-grained insights into generative performance.
 
 Metrics can be computed at the class level, enabling fine-grained insights into generative performance.
-Additionally, new metrics can be seamlessly integrated into the evaluation pipeline. This is a standard feature of our framework, with examples and guides available in the [metrics](benchmarks/experiments/synth_data_generation_icassp/icassp_pipeline/metrics/metrics.py) file.
+Additionally, new metrics can be seamlessly integrated into the evaluation pipeline. This is a standard feature of our framework, with examples and guides available in the [metrics]() file.
 ## Repository Structure
 
 ```plaintext
