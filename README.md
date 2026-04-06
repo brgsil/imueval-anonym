@@ -87,10 +87,10 @@ Additionally, new metrics can be seamlessly integrated into the evaluation pipel
 │   │
 │   ├── experiments/
 │   │   ├── example/      # Minimal working example
-│   │   └── synth_data_generation_icassp/   # ICASSP experiment
+│   │   └── synth_data_generation/   # Synth Data experiment
 │   │       ├── configs/                    # Execution plan (.csv) files
 │   │       │   └── overrides/              # Config override files
-│   │       ├── icassp_pipeline/
+│   │       ├── pipeline/
 │   │       │   ├── callback/               # Data Generation callback and others
 │   │       │   ├── checkpoints/            # Model checkpoints (.ckpt)
 │   │       │   │   └── embedder/
