@@ -1,9 +1,9 @@
-class_path: minerva_extension.models.diffwave.DiffWaveLoaderModule
+class_path: base_extension.models.diffwave.DiffWaveLoaderModule
 init_args:
   synth_data_path: benchmarks/experiments/synth_data_generation/pipeline/data/synthetic_data/DiffWave/conditional/normalized_label/
   ckpt_path: benchmarks/experiments/synth_data_generation/pipeline/checkpoints/DiffWave/conditional/normalized_label/checkpoint-1_000_000.pkl
   model:
-    class_path: minerva_extension.models.diffwave.WaveNet_Speech_Commands
+    class_path: base_extension.models.diffwave.WaveNet_Speech_Commands
     init_args:
       in_channels: 6
       res_channels: 256

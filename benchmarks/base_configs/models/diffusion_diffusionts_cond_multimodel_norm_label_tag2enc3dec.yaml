@@ -1,4 +1,4 @@
-class_path: minerva_extension.models.base.GenerativeDiffusionTSMultimodelModule
+class_path: base_extension.models.base.GenerativeDiffusionTSMultimodelModule
 init_args:
   synth_data_path: benchmarks/experiments/synth_data_generation/pipeline/data/synthetic_data/DiffusionTS-2enc-3dec/conditional_multimodel/normalized_label/
   ckpt_paths:
@@ -9,7 +9,7 @@ init_args:
     4: benchmarks/experiments/synth_data_generation/pipeline/checkpoints/DiffusionTS-2enc-3dec/conditional_multimodel/normalized_label/checkpoint-class-4.pt
     5: benchmarks/experiments/synth_data_generation/pipeline/checkpoints/DiffusionTS-2enc-3dec/conditional_multimodel/normalized_label/checkpoint-class-5.pt
   base_model:
-    class_path: minerva_extension.models.diffusionts.DiffusionTS
+    class_path: base_extension.models.diffusionts.DiffusionTS
     init_args:
       seq_length: 60
       feature_size: 6
