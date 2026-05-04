@@ -1,0 +1,18 @@
+class_path: benchmarks.experiments.synth_data_generation.pipeline.models.base.GenerativeGANCondicionalModule
+init_args:
+  ckpt_path: ./benchmarks/experiments/synth_data_generation/pipeline/checkpoints/ttsgan_condicional/condicional_generator_ttsgan_norm_label.ckpt
+  base_model:
+    class_path: benchmarks.experiments.synth_data_generation.pipeline.models.ttscgan.TTSGAN_Condicional_Generator
+    init_args:
+      seq_len: 60
+      channels: 6
+      num_classes: 6
+      latent_dim: 100
+      data_embed_dim: 10
+      label_embed_dim: 10
+      depth: 3
+      num_heads: 5
+      forward_drop_rate: 0.5
+      attn_drop_rate: 0.5
+      squeeze: true
+  synth_data_path: "./benchmarks/experiments/synth_data_generation/pipeline/data/synth/gan_condicional_ttsgan_norm_label_yaml"

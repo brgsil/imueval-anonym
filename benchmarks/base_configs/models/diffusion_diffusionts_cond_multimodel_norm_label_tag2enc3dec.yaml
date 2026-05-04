@@ -1,0 +1,28 @@
+class_path: minerva_extension.models.base.GenerativeDiffusionTSMultimodelModule
+init_args:
+  synth_data_path: benchmarks/experiments/synth_data_generation/pipeline/data/synthetic_data/DiffusionTS-2enc-3dec/conditional_multimodel/normalized_label/
+  ckpt_paths:
+    0: benchmarks/experiments/synth_data_generation/pipeline/checkpoints/DiffusionTS-2enc-3dec/conditional_multimodel/normalized_label/checkpoint-class-0.pt
+    1: benchmarks/experiments/synth_data_generation/pipeline/checkpoints/DiffusionTS-2enc-3dec/conditional_multimodel/normalized_label/checkpoint-class-1.pt
+    2: benchmarks/experiments/synth_data_generation/pipeline/checkpoints/DiffusionTS-2enc-3dec/conditional_multimodel/normalized_label/checkpoint-class-2.pt
+    3: benchmarks/experiments/synth_data_generation/pipeline/checkpoints/DiffusionTS-2enc-3dec/conditional_multimodel/normalized_label/checkpoint-class-3.pt
+    4: benchmarks/experiments/synth_data_generation/pipeline/checkpoints/DiffusionTS-2enc-3dec/conditional_multimodel/normalized_label/checkpoint-class-4.pt
+    5: benchmarks/experiments/synth_data_generation/pipeline/checkpoints/DiffusionTS-2enc-3dec/conditional_multimodel/normalized_label/checkpoint-class-5.pt
+  base_model:
+    class_path: minerva_extension.models.diffusionts.DiffusionTS
+    init_args:
+      seq_length: 60
+      feature_size: 6
+      n_layer_enc: 2
+      n_layer_dec: 3
+      d_model: 256
+      timesteps: 1000
+      sampling_timesteps: 1000
+      loss_type: 'l1'
+      beta_schedule: 'cosine'
+      n_heads: 8
+      mlp_hidden_times: 4
+      attn_pd: 0.0
+      resid_pd: 0.0
+      kernel_size: 1
+      padding_size: 0

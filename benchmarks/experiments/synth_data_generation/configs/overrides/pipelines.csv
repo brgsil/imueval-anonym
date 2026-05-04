@@ -1,0 +1,6 @@
+override_id,task,name,overrides
+train_200,har,train_generate_synth_normalized_all,"max_epochs=200"
+train_200,har,train_generate_synth_normalized_label,"max_epochs=200"
+no_train,har,train_generate_synth_normalized_all,"max_epochs=0"
+no_train,har,train_generate_synth_normalized_label,"max_epochs=0"
+no_train,har,train_generate_synth_unnormalized,"max_epochs=0"
